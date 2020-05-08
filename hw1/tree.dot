@@ -1,0 +1,32 @@
+digraph Tree {
+node [shape=box] ;
+0 [label="the <= 0.5\ngini = 0.479\nsamples = 2286\nvalue = [[1378, 908]\n[908, 1378]]"] ;
+1 [label="donald <= 0.5\ngini = 0.449\nsamples = 1922\nvalue = [[1267, 655]\n[655, 1267]]"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="hillary <= 0.5\ngini = 0.49\nsamples = 1253\nvalue = [[713, 540]\n[540, 713]]"] ;
+1 -> 2 ;
+3 [label="(...)"] ;
+2 -> 3 ;
+240 [label="(...)"] ;
+2 -> 240 ;
+251 [label="de <= 0.5\ngini = 0.285\nsamples = 669\nvalue = [[554, 115]\n[115, 554]]"] ;
+1 -> 251 ;
+252 [label="(...)"] ;
+251 -> 252 ;
+391 [label="(...)"] ;
+251 -> 391 ;
+392 [label="trumps <= 0.5\ngini = 0.424\nsamples = 364\nvalue = [[111, 253]\n[253, 111]]"] ;
+0 -> 392 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+393 [label="turnbull <= 0.5\ngini = 0.398\nsamples = 347\nvalue = [[95, 252]\n[252, 95]]"] ;
+392 -> 393 ;
+394 [label="(...)"] ;
+393 -> 394 ;
+555 [label="(...)"] ;
+393 -> 555 ;
+556 [label="energy <= 0.5\ngini = 0.111\nsamples = 17\nvalue = [[16, 1]\n[1, 16]]"] ;
+392 -> 556 ;
+557 [label="(...)"] ;
+556 -> 557 ;
+558 [label="(...)"] ;
+556 -> 558 ;
+}
