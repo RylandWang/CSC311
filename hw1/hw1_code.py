@@ -199,12 +199,6 @@ if __name__ == "__main__":
 
     # create graph visualizing the classifier
     tree.export_graphviz(tree_classifier, out_file="tree.dot", feature_names=X_feature_names, max_depth=2)
-
-    print()
-    # compute information gain on various key words
-    for word in ["the", "donald", "trumps", "hillary", "de", "energy", "wtf", "whiteness", "riots", "berserk"]:
-        info_gain = leafs_entropy(word, train_set, train_labels, X_feature_names)
-        print(f"information gain for {word}: ", info_gain)
     
     print()
     knn_model = select_knn_model(train_set, validation_set, train_labels, validation_labels)
